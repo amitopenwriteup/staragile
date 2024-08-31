@@ -1,0 +1,88 @@
+shell scripting
+
+cat > employee.txt 
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000 
+
+
+awk '{print}' employee.txt
+
+awk '/manager/ {print}' employee.txt 
+
+awk '{print $1,$4}' employee.txt
+
+------------------
+
+sed
+cat testfile.txt
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+unix linux which one you choose.
+unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+
+
+sed 's/unix/linux/' geekfile.txt
+
+sed 's/unix/linux/g' geekfile.txt
+
+-------------------------
+cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+
+
+cut -b 1,2,3 state.txt
+
+cut -b -3 state.txt
+
+-------------------------------
+
+
+#/bin/bash
+
+a=0
+
+# lt is less than operator
+
+#Iterate the loop until a less than 10
+
+while [ $a -lt 10 ]
+do
+# Print the values
+echo $a
+# increment the value
+a=`expr $a + 1`
+done
+
+---------------------
+
+#/bin/bash
+
+#Start of for loop
+
+for a in 1 2 3 4 5 6 7 8 9 10
+do
+
+# if a is equal to 5 break the loop
+if [ $a == 5 ]
+then
+break
+fi
+
+# Print the value
+echo “Iteration no $a”
+done
+
+---------------
+
+
+

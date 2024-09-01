@@ -1,6 +1,8 @@
 shell scripting
 
-cat > employee.txt 
+Using vi editor create employee.txt and copy below entry
+
+
 ajay manager account 45000
 sunil clerk account 25000
 varun manager sales 50000
@@ -19,20 +21,21 @@ awk '{print $1,$4}' employee.txt
 
 ------------------
 
-sed
-cat testfile.txt
+create file using vi testfile.txt and copy below data
+
 unix is great os. unix is opensource. unix is free os.
 learn operating system.
 unix linux which one you choose.
 unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
 
 
-sed 's/unix/linux/' geekfile.txt
+sed 's/unix/linux/' testfile.txt
 
-sed 's/unix/linux/g' geekfile.txt
+sed 's/unix/linux/g' testfile.txt
 
 -------------------------
-cat state.txt
+vi state.txt and copy below data
+
 Andhra Pradesh
 Arunachal Pradesh
 Assam
@@ -45,44 +48,5 @@ cut -b 1,2,3 state.txt
 cut -b -3 state.txt
 
 -------------------------------
-
-
-#/bin/bash
-
-a=0
-
-# lt is less than operator
-
-#Iterate the loop until a less than 10
-
-while [ $a -lt 10 ]
-do
-# Print the values
-echo $a
-# increment the value
-a=`expr $a + 1`
-done
-
----------------------
-
-#/bin/bash
-
-#Start of for loop
-
-for a in 1 2 3 4 5 6 7 8 9 10
-do
-
-# if a is equal to 5 break the loop
-if [ $a == 5 ]
-then
-break
-fi
-
-# Print the value
-echo “Iteration no $a”
-done
-
----------------
-
 
 

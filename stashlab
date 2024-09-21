@@ -1,0 +1,20 @@
+git branch dev
+git checkout dev
+touch mycode
+git add .
+git status
+git stash save "add work"
+git status
+git stash list
+git stash apply 0
+git status
+
+-------------
+#pop command
+
+git stash save "add"
+git stash list
+git status
+git stash pop 0
+git status
+

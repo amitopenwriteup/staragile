@@ -16,6 +16,13 @@ Perform below steps
 #using docker exec command check the ip address: 'ip addr'
 #check the release version inside the container: 'cat /etc/os-release'
 
+ docker run --name mytest -d dokken/centos-8
+docker exec -it mytest cat /etc/redhat-release
+docker exec -it mytest ip addr show
+
+
+
+
 
 ------------
 Try some more commands

@@ -1,0 +1,7 @@
+docker search nginx
+docker pull nginx:stable-alpine3.20-perl
+docker images
+docker run --name mycontainer1 -dit  nginx:stable-alpine3.20-perl sh
+docker ps
+docker ps -a
+docker inspect <container name>

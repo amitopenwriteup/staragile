@@ -5,3 +5,22 @@ docker run --name mycontainer1 -dit  nginx:stable-alpine3.20-perl sh
 docker ps
 docker ps -a
 docker inspect <container name>
+
+docker search --filter "is-official=true" ubuntu
+
+docker search --format "table {{.Name}}\t{{.Description}}" --no-trunc ubuntu  
+
+# trial ssignment: Run a container name my-test using centos (dokken/centos-8) with detached mode'
+Perform below steps
+#list out using docker command 
+#using docker exec command check the ip address: 'ip addr'
+#check the release version inside the container: 'cat /etc/os-release'
+
+
+------------
+Try some more commands
+
+docker history <image name>
+docker logs <containerid>
+docker restart <containerid>
+docker info

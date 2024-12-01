@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+WORKDIR /app
+COPY file.txt /app/
+ADD https://github.com/amitopenwriteup/my_proj/blob/master/k8s-setup.txt /app/i
